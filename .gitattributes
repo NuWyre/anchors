@@ -1,0 +1,8 @@
+# Anchor repo content is forensically integrity-checked.
+# All daily-root files are treated as binary to prevent any line-ending
+# conversion that would cause SHA-256 mismatches across clone environments
+# (especially Windows autocrlf=true defaults vs Linux/Mac).
+daily-roots/** binary
+
+# README and other repo-meta text files use normal text handling.
+*.md text
